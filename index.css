@@ -9,3 +9,7 @@ a referir al mismo. */
   /* Hemos cogido "prestado" el color del footer de Platzi, je, je. */
   background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372)
 }
+ /* El color de los enlaces del footer lo queremos blanco. */
+#footer a {
+  color: white;
+}

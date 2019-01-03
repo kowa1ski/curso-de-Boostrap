@@ -13,8 +13,9 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <!-- Vamos al lío y vamos a crear el footer -->
-    <footer id="footer">
+    <!-- Añadimos aquí un padding para el footer. Es sencillo con unas clases de
+      boostrap que son pb(padding bottom) y pt(padding top) -->
+    <footer id="footer" class="pb-4 pt-4">
       <div class="container">
         <!-- queremos que nuestro texto esté centrado, para ello añadimos a la row
         una clase de boostrap llamada text-center. Facilísimo. -->
@@ -22,17 +23,29 @@
           <!-- Vamos sin más a por las columnas. En cada una pondremos un link  -->
           <!-- Va os a añadir un , -12 , a la columna para forzar que se apilen y
           que se vean una debajo de la otra. Mobile-first. Me gusta esto. -->
-          <div class="col-12">
+          <!-- Qué ocurre? que va a estar mucho mejor que en dispositivos grandes no se
+          apilen las columnas sino que se repartan el espacio. Esto se entiende y
+          tiene sentido. Por ello vamos a decirle a las columnas que se comporten de
+          esa manera en esos dispositivos grandes. Para ello usamos el , col-lg , como
+          clase añadida y así entenderá boostrap nuesta intención. -->
+          <div class="col-12 col-lg">
             <a href="#">Preguntas frecuentes</a>
-
           </div>
-          <div class="col-12">
+          <div class="col-12 col-lg">
             <a href="#">Contáctanos</a>
-
           </div>
-          <div class="col-12">
+          <div class="col-12 col-lg">
             <a href="#">Prensa</a>
-
+          </div>
+          <!-- añadimos más columnas -->
+          <div class="col-12 col-lg">
+            <a href="#">Términos y condiciones</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Privacidad</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Estudiantes</a>
           </div>
 
         </div>
