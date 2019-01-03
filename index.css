@@ -1,0 +1,11 @@
+/* La creación de este archivo no merece explicación. Se hace para manipular
+los estilos de nuestra página. No tiene más historia. */
+
+/* No entiendo muy bien por qué no nos referimos directamente al footer como tal.
+De todos modos lo hemos etiquetado con un , id , y es por él que nos vamos
+a referir al mismo. */
+
+#footer {
+  /* Hemos cogido "prestado" el color del footer de Platzi, je, je. */
+  background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372)
+}

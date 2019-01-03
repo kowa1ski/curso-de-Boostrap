@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,11 +7,39 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- vamos a llamar a nuestro archivo de estilos personalizado -->
+    <link rel="stylesheet" href="index.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <!-- Borramos el h1 por defecto y vamos a comenzar a hacer cosas. Venga! -->
+    <!-- Vamos al lío y vamos a crear el footer -->
+    <footer id="footer">
+      <div class="container">
+        <!-- queremos que nuestro texto esté centrado, para ello añadimos a la row
+        una clase de boostrap llamada text-center. Facilísimo. -->
+        <div class="row text-center">
+          <!-- Vamos sin más a por las columnas. En cada una pondremos un link  -->
+          <!-- Va os a añadir un , -12 , a la columna para forzar que se apilen y
+          que se vean una debajo de la otra. Mobile-first. Me gusta esto. -->
+          <div class="col-12">
+            <a href="#">Preguntas frecuentes</a>
+
+          </div>
+          <div class="col-12">
+            <a href="#">Contáctanos</a>
+
+          </div>
+          <div class="col-12">
+            <a href="#">Prensa</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
