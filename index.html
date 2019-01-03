@@ -13,21 +13,54 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <!-- Añadimos aquí un padding para el footer. Es sencillo con unas clases de
-      boostrap que son pb(padding bottom) y pt(padding top) -->
+    <!-- Buena práctica de Sacha. Encerrar las secciones con comentarios -->
+    <!-- header -->
+
+    <!-- Vamos a construir este header. Hemos ido a boostrap y hemos cogido unos de los
+    navbar que nos ha gustado. Lo copiamos y pegamos aquí. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+    <!-- /header -->
+
+    <!-- footer -->
     <footer id="footer" class="pb-4 pt-4">
       <div class="container">
-        <!-- queremos que nuestro texto esté centrado, para ello añadimos a la row
-        una clase de boostrap llamada text-center. Facilísimo. -->
         <div class="row text-center">
-          <!-- Vamos sin más a por las columnas. En cada una pondremos un link  -->
-          <!-- Va os a añadir un , -12 , a la columna para forzar que se apilen y
-          que se vean una debajo de la otra. Mobile-first. Me gusta esto. -->
-          <!-- Qué ocurre? que va a estar mucho mejor que en dispositivos grandes no se
-          apilen las columnas sino que se repartan el espacio. Esto se entiende y
-          tiene sentido. Por ello vamos a decirle a las columnas que se comporten de
-          esa manera en esos dispositivos grandes. Para ello usamos el , col-lg , como
-          clase añadida y así entenderá boostrap nuesta intención. -->
           <div class="col-12 col-lg">
             <a href="#">Preguntas frecuentes</a>
           </div>
@@ -47,12 +80,10 @@
           <div class="col-12 col-lg">
             <a href="#">Estudiantes</a>
           </div>
-
         </div>
-
-      </div>
-
+      </div
     </footer>
+    <!-- /footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
