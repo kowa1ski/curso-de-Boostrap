@@ -34,12 +34,21 @@ Para ello hacemos los siguientes ajustes. */
   /* Con esto hecho, las imágenes ahora se ven más negras. Así contrastarán mejor. */
   color: white;
 
-  /* En el momento de escribir este código he tenido que añadir esto,
-  esta línea siguiente porque el archivo de estilos de boostrap se ha
-  actualizado y si no se define este parámetro el texto nos quedaría detrás
-  del carrusel. */
   z-index: 2;
 }
+
+/* Dijimos que queríamos centrar vericalmente nuestro texto del overlay
+y para ello vamos a hacer que el container y su row ocupen todo el alto
+del overlay. Así al ordenar su centro nos aseguramos de que se posiciona
+donde nosotros estamos queriendo. */
+.overlay .container,
+.overlay .row {
+  height: 100%;
+}
+/* Nota: en el curso acceden a estos elementos con , #carousel .overlay , así
+precedido todo el rato por el , id , del carrusel. Que creo que es una buena
+práctica siendo que puede haber más de un overlay. En nuestro caso sólo hay uno
+así que lo he resuelto así. Y funciona. Ouh yea! */
 
 #footer {
   /* Hemos cogido "prestado" el color del footer de Platzi, je, je. */

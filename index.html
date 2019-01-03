@@ -74,15 +74,26 @@
           <!-- Añadimos otro div para hacer un overlay. Queremos añadir texto encima del carrusel. -->
           <div class="overlay">
             <div class="container">
-              <div class="row">
-                <div class="col">
+              <!-- Queremos que el texto aparezca centrado verticalmente. -->
+              <!-- Para ello, aparte de la instrucción , align , debemos asegurarnos
+              que el contenedor de la fila ocupe todo el .overlay para que el centro
+              que le pedimos sea el esperado. -->
+              <div class="row align-items-center">
+                <!-- A partir de pantallas medianas queremos el contenido en la parte media derecha -->
+                <!-- También queremos que el texto esté centrado para tamaños inferiores a , md ,. -->
+                <div class="col-md-6 offset-md-6 text-center text-md-right" >
                   <h1>Platzi Conf Hawaii</h1>
-                  <p>Platzi Conf llega por pimera vez a Hawaii! Un evento para
+                  <!-- Queremos hacer desaparecer el texto en pantallas pequeñas. -->
+                  <p class="d-none d-md-block">Platzi Conf llega por pimera vez a Hawaii! Un evento para
                     compartir con nuestra comunidad el conocimiento y experiencia
                     de los expertos que están creando el futuro de internet.
                     Ven a conocer a miembros del Team Platzi, a otros
                     estudiantes de Platzi y a los oradores de primer nivel
                     que tenemos para ti. Te esperamos!</p>
+                    <!-- Añadimos ahora dos elementos clickables -->
+                    <a href="#">Quiero ser orador</a>
+                    <button type="button" name="button">Comprar tickets</button>
+                    <!-- Nota: el botón ni se parece a como se ve en el curso -->
 
                 </div>
 
