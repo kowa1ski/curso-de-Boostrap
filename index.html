@@ -18,41 +18,56 @@
 
     <!-- Vamos a construir este header. Hemos ido a boostrap y hemos cogido unos de los
     navbar que nos ha gustado. Lo copiamos y pegamos aquí. -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <!-- A este nav le añadimos un id para darle estilos -->
+    <!-- también le cambiamos el color para que contraste con el logo -->
+    <!-- nota: bg es background -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- Metemos todo el contenido del nav en un container -->
+      <div class="container">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+        <a class="navbar-brand" href="#">
+          <!-- A por el logo -->
+          <img src="assets/images/platzi-logo.png" alt="Platzi logo">
+          <!-- Y un pequeño texto al lado del logo -->
+          Conf Hawaii
+
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- , mr , es margin rigth. En este caso estaba calculando que el margen
+          a la derecha fuera automático. Por esta razón el submenú se vehía todo en la
+          parte izquierda. Lo vamos a cambiar para que sea al contrario (margin left ml)-->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <!-- Y cambiamos textos por aquí -->
+              <a class="nav-link" href="#">La Conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conviértete en orador</a>
+            </li>
+            <li class="nav-item">
+              <!-- Este elemento lo queremos resaltar para atraer la compra.
+              Para ello le vamos a crear una clase(text-platzi) y a darle estilos. -->
+              <a class="nav-link text-platzi" href="#">Compra de tickets</a>
+            </li>
+            <!-- No queremos dropdown. Nos lo comemos. No lo queremos -->
+            <!-- Tampoco queremos ningún elemento deshabilitado -->
+          </ul>
+          <!-- El form nos lo cargamos. No lo queremos. -->
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+
+      </div>
+
+    </nav>
 
 
     <!-- /header -->

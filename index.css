@@ -1,9 +1,10 @@
-/* La creación de este archivo no merece explicación. Se hace para manipular
-los estilos de nuestra página. No tiene más historia. */
+.text-platzi {
+  color: #97c93e !important;
+}
 
-/* No entiendo muy bien por qué no nos referimos directamente al footer como tal.
-De todos modos lo hemos etiquetado con un , id , y es por él que nos vamos
-a referir al mismo. */
+#header img {
+  width: 80px;
+}
 
 #footer {
   /* Hemos cogido "prestado" el color del footer de Platzi, je, je. */
