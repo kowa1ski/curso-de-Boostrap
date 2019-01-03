@@ -18,6 +18,29 @@
 
 }
 
+/* Vamos a conformar la manera de añadir el texto un nivel por encima del carrusel
+Para ello hacemos los siguientes ajustes. */
+#carousel {
+  position: relative;
+}
+
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .5);
+  /* Con esto hecho, las imágenes ahora se ven más negras. Así contrastarán mejor. */
+  color: white;
+
+  /* En el momento de escribir este código he tenido que añadir esto,
+  esta línea siguiente porque el archivo de estilos de boostrap se ha
+  actualizado y si no se define este parámetro el texto nos quedaría detrás
+  del carrusel. */
+  z-index: 2;
+}
+
 #footer {
   /* Hemos cogido "prestado" el color del footer de Platzi, je, je. */
   background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372)
