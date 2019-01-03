@@ -6,6 +6,18 @@
   width: 80px;
 }
 
+/* Vamos a darle algo de estilo a las imágenes del main, dentro del carrusel */
+#main .carousel-inner img {
+  /* Le damos un 70% del alto del viewport */
+  max-height: 70vh;
+  /* Para que no se desfigure la imagen la autorecortamos(estirar+zoom) */
+  object-fit: cover;
+
+  /* Y ya para flipar, le vamos a dar un filtro a las imágenes */
+  filter: grayscale(70%);
+
+}
+
 #footer {
   /* Hemos cogido "prestado" el color del footer de Platzi, je, je. */
   background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372)
