@@ -61,6 +61,19 @@ precedido todo el rato por el , id , del carrusel. Que creo que es una buena
 práctica siendo que puede haber más de un overlay. En nuestro caso sólo hay uno
 así que lo he resuelto así. Y funciona. Ouh yea! */
 
+/* Queremos un fondo para el place-time. Usaremos el color del header. */
+/* background y background-color tienen el mismo efecto aquí. */
+#place-time {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Por defecto las imágenes no respetan a nadie. Es por esto que tenemos que ordenarle
+que no se exceda del ancho de su contenedor. Es este caso su contenedor es una col. */
+#place-time img {
+  max-width: 100%;
+}
+
 #footer {
   /* Hemos cogido "prestado" el color del footer de Platzi, je, je. */
   background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372)
