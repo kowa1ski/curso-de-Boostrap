@@ -2,6 +2,17 @@
   color: #97c93e !important;
 }
 
+/* Vamos a personalizar los estilos del segundo botón. Para ellos elegimos el color verde
+de Platzi y el blanco para el texto. La clase , btn , ya convirtió el elemento en
+un botón, ahora sólo le estamos dando un poco de estilo. */
+.btn-platzi {
+  background: #97c93e;
+  color: white;
+}
+.btn-platzi:hover {
+  background: #82ad36;
+}
+
 #header img {
   width: 80px;
 }
